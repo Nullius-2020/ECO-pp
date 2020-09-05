@@ -48,7 +48,7 @@ For finetuning on UCF101 use the following command:
 
 * This project originated from the course https://aistudio.baidu.com/aistudio/education/group/info/1340
    
-#### Citation
+### Citation
 If you use this code or ideas from the paper for your research, please cite this paper:
 ```
 @inproceedings{ECO_eccv18,
