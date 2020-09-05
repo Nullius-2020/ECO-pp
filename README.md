@@ -6,9 +6,8 @@
 
 ##### NOTE
 
-* This only test ECO-Full model for UCF101 dataset
-* Pre-trained model for ECO-Full is transfered from ECO-Full pretrained model on Kinetics
-* You can try it on Baidu AIStudio https://aistudio.baidu.com/aistudio/projectdetail/698987
+* This only test ECO-Full model for dataset UCF101 
+* You can try it on AIStudio project https://aistudio.baidu.com/aistudio/projectdetail/698987
 
 
 ### Environment:
@@ -18,15 +17,15 @@
 ### Clone this repo
 
 ```
-git clone https://github.com/jordan2013/ECO-pp
+git clone https://github.com/Nullius-2020/ECO-pp
 ```
 
 ### Generate dataset lists
 
 ```bash
-python gen_dataset_lists.py <ucf101/something> <dataset_frames_root_path>
+python gen_dataset_lists.py <ucf101> <dataset_frames_root_path>
 ```
-e.g. python gen_dataset_lists.py something ~/dataset/20bn-something-something-v1/
+e.g. python gen_dataset_lists.py ucf101 ~/dataset/ucf101/
 
 > The dataset should be organized as:<br>
 > <dataset_frames_root_path>/<video_name>/<frame_images>
