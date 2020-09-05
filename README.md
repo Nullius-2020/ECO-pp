@@ -31,14 +31,8 @@ e.g. python gen_dataset_lists.py ucf101 ~/dataset/ucf101/
 > <dataset_frames_root_path>/<video_name>/<frame_images>
 
 ### Training
-1. Download the initialization and trained models:
 
-```Shell
-      ECO-Full pretrained model on Kinetics: eco-pp.pdparams is in the folder model
-
-```
-
-2. For finetuning on UCF101 use the following command:
+For finetuning on UCF101 use the following command:
 
     sh run_demo_ECO_Full.sh local
 ```
@@ -50,7 +44,10 @@ e.g. python gen_dataset_lists.py ucf101 ~/dataset/ucf101/
 ```
 * configurations explained in "opts.py"
 
+###Thanks
 
+* This project originated from the course https://aistudio.baidu.com/aistudio/education/group/info/1340
+   
 #### Citation
 If you use this code or ideas from the paper for your research, please cite this paper:
 ```
