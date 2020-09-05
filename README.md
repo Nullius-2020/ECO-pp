@@ -44,7 +44,7 @@ For finetuning on UCF101 use the following command:
 ```
 * configurations explained in "opts.py"
 
-###Thanks
+### Thanks
 
 * This project originated from the course https://aistudio.baidu.com/aistudio/education/group/info/1340
    
