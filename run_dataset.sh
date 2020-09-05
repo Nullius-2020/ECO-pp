@@ -1,0 +1,1 @@
+python dataset.py ucf101 RGB data/ucf101_rgb_train_t.txt data/ucf101_rgb_val_t.txt

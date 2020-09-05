@@ -1,2 +1,67 @@
-# ECO-pp
- PaddlePaddle implementation for "ECO: Efficient Convolutional Network for Online Video Understanding", ECCV 2018 
+#### This is a fork of https://github.com/mzolfaghari/ECO-pytorch's PaddlePaddle implementation for the [paper](https://arxiv.org/pdf/1804.09066.pdf):
+##### " ECO: Efficient Convolutional Network for Online Video Understanding, European Conference on Computer Vision (ECCV), 2018." By Mohammadreza Zolfaghari, Kamaljeet Singh, Thomas Brox
+ 
+ 
+
+
+##### NOTE
+
+* This only test ECO-Full model for UCF101 dataset
+* Pre-trained model for ECO-Full is transfered from ECO-Full pretrained model on Kinetics
+* You can try it on Baidu AIStudio https://aistudio.baidu.com/aistudio/projectdetail/698987
+
+
+### Environment:
+* Python 3.7
+* PaddlePaddle 1.8.0
+
+### Clone this repo
+
+```
+git clone https://github.com/jordan2013/ECO-pp
+```
+
+### Generate dataset lists
+
+```bash
+python gen_dataset_lists.py <ucf101/something> <dataset_frames_root_path>
+```
+e.g. python gen_dataset_lists.py something ~/dataset/20bn-something-something-v1/
+
+> The dataset should be organized as:<br>
+> <dataset_frames_root_path>/<video_name>/<frame_images>
+
+### Training
+1. Download the initialization and trained models:
+
+```Shell
+      ECO-Full pretrained model on Kinetics: eco-pp.pdparams is in the folder model
+
+```
+
+2. For finetuning on UCF101 use the following command:
+
+    sh run_demo_ECO_Full.sh local
+```
+
+### NOTE
+* If you want to train your model from scratch change the config as following:
+```bash
+    --pretrained_parts scratch
+```
+* configurations explained in "opts.py"
+
+
+#### Citation
+If you use this code or ideas from the paper for your research, please cite this paper:
+```
+@inproceedings{ECO_eccv18,
+author={Mohammadreza Zolfaghari and
+               Kamaljeet Singh and
+               Thomas Brox},
+title={{ECO:} Efficient Convolutional Network for Online Video Understanding},	       
+booktitle={ECCV},
+year={2018}
+}
+```
+
